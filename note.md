@@ -54,3 +54,11 @@ npx create-next-app@latest
 
 - To create client component it is necessary to include 'use client' at the top of the file
 - Client components can't perform task like data fetching or reading files but can handle hooks and user interactions.
+
+## Routing
+
+- NextJS has file based routing mechanism
+- URL paths are defined by files and folders in codebase
+- All routes must be places inside **app folder**
+- Every file that corresponds to route, must be named page.tsx or page.js
+- Each forlder corresponds to the path segment in the URL
