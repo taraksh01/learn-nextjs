@@ -43,3 +43,14 @@ npx create-next-app@latest
 - .next folder ==> for dev and prod builds
 - app ==> here we write code for our web app
 - public ==> Hold all the static assets
+
+## Server components
+
+- By default all the components are server component in next.js
+- They have the ability to perform task such as fetching data or reading files from database
+- They don't have the ability to handle hooks or handle user interactions.
+
+## Client components
+
+- To create client component it is necessary to include 'use client' at the top of the file
+- Client components can't perform task like data fetching or reading files but can handle hooks and user interactions.
