@@ -68,3 +68,4 @@ npx create-next-app@latest
 - To use catch all feature we will use [...] while naming folder
 - We can create a custom route error page by naming it **not-found.tsx** or **not-found.js**
 - We can also import notFound form next/navigation to show error page conditionally. Upon callling the imported notFound function will fallback to nearest NotFound boundary
+- There must be a **page.tsx** or **page.js** file to access the route
