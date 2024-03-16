@@ -63,3 +63,4 @@ npx create-next-app@latest
 - Every file that corresponds to route, must be named page.tsx or page.js
 - Each folder corresponds to the path segment in the URL
 - For nested route add folder inside the route and add page.tsx or page.js inside folder.
+- For dynamic route, wrap the folder name inside brackets [] and inside that add page.tsx or page.js
