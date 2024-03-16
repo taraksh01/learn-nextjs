@@ -78,3 +78,7 @@ npx create-next-app@latest
 - Private folder indicates private implementation details that should not be considered by routing system
 - Folder and subfolders are excluded from routing
 - To make a folder private, we use uderscore as prefix
+
+## Layout
+
+- layout is a page that is unique to a route and shared between multiple pages
