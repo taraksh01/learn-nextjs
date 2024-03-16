@@ -61,4 +61,5 @@ npx create-next-app@latest
 - URL paths are defined by files and folders in codebase
 - All routes must be places inside **app folder**
 - Every file that corresponds to route, must be named page.tsx or page.js
-- Each forlder corresponds to the path segment in the URL
+- Each folder corresponds to the path segment in the URL
+- For nested route add folder inside the route and add page.tsx or page.js inside folder.
