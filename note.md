@@ -70,6 +70,8 @@ npx create-next-app@latest
 - We can also import notFound form next/navigation to show error page conditionally. Upon callling the imported notFound function will fallback to nearest NotFound boundary
 - There must be a **page.tsx** or **page.js** file to access the route
 - To use undescore in route use **%5F**
+- To use group routing wrap folder name inside parentheses ()
+- When we use group routing, it is excluded from the route path
 
 ### Private folder
 
