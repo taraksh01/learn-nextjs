@@ -25,3 +25,21 @@
 5. Styling
 6. Optimization for images, fonts and scripts
 7. Dev and prod build system
+
+## How to start nextJS app?
+
+```javascript
+npx create-next-app@latest
+```
+
+## What are these files?
+
+- package.json ==> project dependencies and scripts
+- next.config.mjs ==> for nextjs
+- tsconfig.json ==> for typescript
+- eslintrc.json ==> for eslint
+- tailwind.config.ts and postcss.config.js ==> for enabling tailwind css
+- next-env.ts ==> for typescript declarations
+- .next folder ==> for dev and prod builds
+- app ==> here we write code for our web app
+- public ==> Hold all the static assets
