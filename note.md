@@ -64,3 +64,4 @@ npx create-next-app@latest
 - Each folder corresponds to the path segment in the URL
 - For nested route add folder inside the route and add page.tsx or page.js inside folder.
 - For dynamic route, wrap the folder name inside brackets [] and inside that add page.tsx or page.js
+- We can use dynamic route inside static route and static route inside dynamic route
