@@ -82,3 +82,4 @@ npx create-next-app@latest
 ## Layout
 
 - layout is a page that is unique to a route and shared between multiple pages
+- We can use nested layout for different route just as we do it for page.tsx
