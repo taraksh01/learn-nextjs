@@ -59,10 +59,12 @@ npx create-next-app@latest
 
 - NextJS has file based routing mechanism
 - URL paths are defined by files and folders in codebase
-- All routes must be places inside **app folder**
-- Every file that corresponds to route, must be named page.tsx or page.js
+- All routes must be places inside **app** folder
+- Every file that corresponds to route, must be named **page.tsx** or **page.js**
 - Each folder corresponds to the path segment in the URL
-- For nested route add folder inside the route and add page.tsx or page.js inside folder.
+- For nested route add folder inside the folder and add page.tsx or page.js
 - For dynamic route, wrap the folder name inside brackets [] and inside that add page.tsx or page.js
 - We can use dynamic route inside static route and static route inside dynamic route
 - To use catch all feature we will use [...] while naming folder
+- We can create a custom route error page by naming it **not-found.tsx** or **not-found.js**
+- We can also import notFound form next/navigation to show error page conditionally. Upon callling the imported notFound function will fallback to nearest NotFound boundary
