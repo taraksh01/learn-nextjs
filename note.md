@@ -131,3 +131,20 @@ npx create-next-app@latest
 - Autometically wraps a route segment and its nested children in a React error boundary
 - Create UI error for the specific segments using file-based hirarchy to adjust granularity
 - Isolate errors to affected segments while keeping the rest app functional and add functionality to recover from error without full page reload
+
+```javascript
+# Component hirarchy
+
+<Layout>
+  <Template>
+    <ErrorBoundary fallback={<Error />}>
+      <Suspense fallback={<Loading />}>
+        <ErrorBoundary fallback={<NotFound />}>
+          <Page />
+        </ErrorBoundary>
+      </Suspense>
+    </ErrorBoundary>
+  </Template>
+</Layout>
+
+```
