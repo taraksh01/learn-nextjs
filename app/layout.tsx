@@ -1,3 +1,5 @@
+import "@/app/globals.css";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,9 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>Header</header>
+        <header className="flex justify-center items-center text-5xl m-4">
+          Header
+        </header>
         {children}
-        <footer>Footer</footer>
+        <footer className="flex justify-center items-center text-5xl m-4">
+          Footer
+        </footer>
       </body>
     </html>
   );
