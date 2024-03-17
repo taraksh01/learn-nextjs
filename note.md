@@ -112,3 +112,4 @@ npx create-next-app@latest
 - We have to pass href attribute to go to the url
 - We can use replace attribute replaces the history instead of adding history to stack
 - With the help of usePathname hook we can get the current path of the url
+- With useRouter hook we can programatically navigate to other url
