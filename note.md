@@ -83,3 +83,19 @@ npx create-next-app@latest
 
 - layout is a page that is unique to a route and shared between multiple pages
 - We can use nested layout for different route just as we do it for page.tsx
+
+## Routing metadata
+
+- NextJS has a metadata API that allows us to define metadata for each page.
+- Metadata ensures accurate and relevant information is displayed when page is shared or indexed.
+  > Configuring metadata
+  >
+  > - Export a static metadata object
+  > - Export a dynamic generateMetadata function
+  >
+  > ### **Rules**
+  >
+  > - Both layout and page can export metadata
+  > - Metadata is read in order from root level down to page level
+  > - When there is multiple metadata defined for same route, they are combined and page metadata will replace all other metadata if they have same property
+  > - we can also make the generateMetadata function async
