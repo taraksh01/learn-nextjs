@@ -119,3 +119,9 @@ npx create-next-app@latest
 - Template are similar to layout in which it wraps the page
 - But with taemplate, when a user navigate between routes that share same tempalte, a new instance of component is mounted, DOM elements are recreated, states are not preserved, and effects are re-synchronized
 - Template can be defined by default exporting **template.tsx** or **template.js** file
+
+## Loading
+
+- This file allows us to create loading state that are displayed to user while a specific route segment's content is loading
+
+- The loading state appears immedietly after navigation, giving user assurance that the application is responsive and actively loading content
