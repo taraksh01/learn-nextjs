@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const navLinks = [
   {
@@ -25,8 +26,15 @@ export default function AuthLayout({
 }) {
   const pathname = usePathname();
   console.log(pathname);
+  const [name, setName] = useState("");
   return (
     <div className="flex flex-col justify-center items-center">
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        className="text-black px-2"
+      />
       <nav className="flex justify-center items-center gap-4 w-full mb-4">
         {navLinks.map((link) => {
           const isActive = pathname === link.href;
