@@ -88,10 +88,16 @@ npx create-next-app@latest
 
 - NextJS has a metadata API that allows us to define metadata for each page.
 - Metadata ensures accurate and relevant information is displayed when page is shared or indexed.
-  > Configuring metadata
+  > ## Configuring metadata
   >
   > - Export a static metadata object
   > - Export a dynamic generateMetadata function
+  > - We can make title as object using Metadata type
+  > - title object can have three properties
+  >
+  > 1. default: useful when we want to define a fallback title for child route
+  > 2. template: useful for dynamic title for nested route
+  > 3. absolute: to ignore all the template provided in the parent metadata
   >
   > ### **Rules**
   >
