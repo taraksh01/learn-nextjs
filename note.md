@@ -125,3 +125,9 @@ npx create-next-app@latest
 - This file allows us to create loading state that are displayed to user while a specific route segment's content is loading
 
 - The loading state appears immedietly after navigation, giving user assurance that the application is responsive and actively loading content
+
+## Error
+
+- Autometically wraps a route segment and its nested children in a React error boundary
+- Create UI error for the specific segments using file-based hirarchy to adjust granularity
+- Isolate errors to affected segments while keeping the rest app functional and add functionality to recover from error without full page reload
