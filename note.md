@@ -105,3 +105,9 @@ npx create-next-app@latest
   > - Metadata is read in order from root level down to page level
   > - When there is multiple metadata defined for same route, they are combined and page metadata will replace all other metadata if they have same property
   > - we can also make the generateMetadata function async
+
+## Navigation
+
+- We can navigate to route using Link
+- We have to pass href attribute to go to the url
+- we can use replace attribute replaces the history instead of adding history to stack
