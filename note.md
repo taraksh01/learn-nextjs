@@ -113,3 +113,9 @@ npx create-next-app@latest
 - We can use replace attribute replaces the history instead of adding history to stack
 - With the help of usePathname hook we can get the current path of the url
 - With useRouter hook we can programatically navigate to other url
+
+## Template
+
+- Template are similar to layout in which it wraps the page
+- But with taemplate, when a user navigate between routes that share same tempalte, a new instance of component is mounted, DOM elements are recreated, states are not preserved, and effects are re-synchronized
+- Template can be defined by default exporting **template.tsx** or **template.js** file
