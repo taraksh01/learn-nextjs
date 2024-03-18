@@ -193,3 +193,5 @@ npx create-next-app@latest
 - Route handler run on server side, ensuring that sensitive informations like private keys remains sequre and never shipped to browser
 - Route handler are equivalant to API route in page router
 - To create a route, we must create a **route.ts** file
+- If both **route.ts** and **page.tsx** are present in folder, **route.ts** will be getting preference
+- For each request type we have to create **Type** async function taking care of the route structure
