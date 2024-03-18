@@ -174,3 +174,12 @@ npx create-next-app@latest
 - When we reload the page, nextJS looks for a **default.tsx** or **default.js** file within each unmatched slots, which is responsible for the default content
 - If **default.tsx** file is missing from any one of the slot, we will get a page error
 - When a page reload will occur, **default.tsx** will be used for unmached routes
+
+### Intercepting routes
+
+- Intercepting rotues allows us to intercept the default route behavior to present an alternate view when navigating through UI, while preserving the intended route for scenarios like page reload
+- This can be helpful when we want to show a route while keeping the context of the page
+- To intecept at same level use **(.)folder** naming convension
+- To intercept at one level up use **(..)folder** naming convension
+- to intercept at two level up use **(..)(..)folder** naming convension _(currently not working due to issue in nextJS)_
+- To intercept at root level use **(...)folder** naming convension
