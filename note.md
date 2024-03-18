@@ -88,23 +88,24 @@ npx create-next-app@latest
 
 - NextJS has a metadata API that allows us to define metadata for each page.
 - Metadata ensures accurate and relevant information is displayed when page is shared or indexed.
-  > ## Configuring metadata
-  >
-  > - Export a static metadata object
-  > - Export a dynamic generateMetadata function
-  > - We can make title as object using Metadata type
-  > - title object can have three properties
-  >
-  > 1. default: useful when we want to define a fallback title for child route
-  > 2. template: useful for dynamic title for nested route
-  > 3. absolute: to ignore all the template provided in the parent metadata
-  >
-  > ### **Rules**
-  >
-  > - Both layout and page can export metadata
-  > - Metadata is read in order from root level down to page level
-  > - When there is multiple metadata defined for same route, they are combined and page metadata will replace all other metadata if they have same property
-  > - we can also make the generateMetadata function async
+
+### Configuring metadata
+
+- Export a static metadata object
+- Export a dynamic generateMetadata function
+- We can make title as object using Metadata type
+- title object can have three properties
+
+  1.  default: useful when we want to define a fallback title for child route
+  2.  template: useful for dynamic title for nested route
+  3.  absolute: to ignore all the template provided in the parent metadata
+
+### **Rules**
+
+- Both layout and page can export metadata
+- Metadata is read in order from root level down to page level
+- When there is multiple metadata defined for same route, they are combined and page metadata will replace all other metadata if they have same property
+- we can also make the generateMetadata function async
 
 ## Navigation
 
@@ -149,3 +150,14 @@ npx create-next-app@latest
 </Layout>
 
 ```
+
+## Parallel routes
+
+- Parallel routes are advanced mechanism that allows for the simultaneous rendering of multiple pages in the same layout
+
+### Rules
+
+- parallel routes in nextJS are defined using feature called slots
+- slots help structure content in modular fashion
+- To define slots we use **@folder** naming convension.
+- Each slot is passed as prop its corresponding **layout.tsx** file
