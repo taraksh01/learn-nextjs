@@ -183,3 +183,13 @@ npx create-next-app@latest
 - To intercept at one level up use **(..)folder** naming convension
 - to intercept at two level up use **(..)(..)folder** naming convension _(currently not working due to issue in nextJS)_
 - To intercept at root level use **(...)folder** naming convension
+
+## Route handler
+
+- As we have created page rotues, we can also create custom request handlers using route handler
+- Unlike page routes which respond with html content, route handler allow us to create RESTful endpoints, giving us full control over response
+- There is no overhead of creating and configuring separate sever
+- Route handler are also great for making external API requests
+- Route handler run on server side, ensuring that sensitive informations like private keys remains sequre and never shipped to browser
+- Route handler are equivalant to API route in page router
+- To create a route, we must create a **route.ts** file
