@@ -167,3 +167,10 @@ npx create-next-app@latest
 - slots help structure content in modular fashion
 - To define slots we use **@folder** naming convension.
 - Each slot is passed as prop its corresponding **layout.tsx** file
+
+### Unmached routes
+
+- While navigating using ui, nextJS retails the previous state of a slot regradless the changes in url
+- When we reload the page, nextJS looks for a **default.tsx** or **default.js** file within each unmatched slots, which is responsible for the default content
+- If **default.tsx** file is missing from any one of the slot, we will get a page error
+- When a page reload will occur, **default.tsx** will be used for unmached routes
