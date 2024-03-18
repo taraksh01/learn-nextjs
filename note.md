@@ -155,6 +155,12 @@ npx create-next-app@latest
 
 - Parallel routes are advanced mechanism that allows for the simultaneous rendering of multiple pages in the same layout
 
+# Why parallel route?
+
+> 1. With parallel route, we can split a single layout into multiple slots making the code more manageable
+> 2. Independent route handeling
+> 3. Sub navigation in route
+
 ### Rules
 
 - parallel routes in nextJS are defined using feature called slots
