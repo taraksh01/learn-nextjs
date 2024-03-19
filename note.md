@@ -206,3 +206,11 @@ npx create-next-app@latest
 - Using request object
 - Using dynamic function like **headers()** or **cookies()**
 - Using other route than GET
+
+## Middleware
+
+- Middleware is a robust way to intercept and control the flow of request or response withing application
+- Next.js does it at global level that significantly enhances the features like redirection, url rewrite, authentication, header and cookies management and more
+- Middleware allows us to add path where it will be active
+  1. Custom matcher config
+  2. Conditional statement
