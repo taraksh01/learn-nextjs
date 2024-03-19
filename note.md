@@ -195,3 +195,14 @@ npx create-next-app@latest
 - To create a route, we must create a **route.ts** file
 - If both **route.ts** and **page.tsx** are present in folder, **route.ts** will be getting preference
 - For each request type we have to create **Type** async function taking care of the route structure
+
+## Caching in route handler
+
+- Route handlers are cached by default when useing get method with re response object in nextJS
+
+### How to opt out of caching?
+
+- Using dynamic mode in segment config option
+- Using request object
+- Using dynamic function like **headers()** or **cookies()**
+- Using other route than GET
