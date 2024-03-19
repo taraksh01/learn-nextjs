@@ -155,7 +155,7 @@ npx create-next-app@latest
 
 - Parallel routes are advanced mechanism that allows for the simultaneous rendering of multiple pages in the same layout
 
-# Why parallel route?
+## Why parallel route?
 
 > 1. With parallel route, we can split a single layout into multiple slots making the code more manageable
 > 2. Independent route handeling
@@ -214,3 +214,35 @@ npx create-next-app@latest
 - Middleware allows us to add path where it will be active
   1. Custom matcher config
   2. Conditional statement
+
+## Rendering
+
+> Rendering is a process of transforming code into UI
+
+1. **Client Side Rendering (CSR)** - In this method, code component is transformed into UI directly within browser
+2. **Server Side Rendering (SSR)** - It renders the page on demand in response to user request.
+3. **Static Site Generation (SSG)** - It occurs at build time, when the application is deployed at server. This results into pages that are already rendered and ready to serve.
+4. **React Server components (RSC)**
+
+### What is hydration?
+
+> During hydration, react takes control of the component tree in the memory based on the HTML that was served. It carefully plans the placement of interactive elements within the tree. Then React proceed to bind neccessary javascript logic to these elements. This involve initializing the application state, attaching event handler for action such as click, mouseover, and setting up any dynamic functionalities required for a fully interactive UI.
+
+### Drawback of SSR
+
+1. We have to fetch everything before we can show anything
+   - Component can not start rendering and then pause or wait while date is being loaded
+   - If the component need to fetch data, it must be done before server can begin rendering the page
+2. We have to load everything before we start hydrating
+   - For successful hydration, the component tree in browser must be exactly match the server generated component tree
+   - This means that all the javascript must be loaded on client before we start hydrating
+3. We must hydrate everything before we interact with anything
+   - React hydrates the component in a single pass, that means once it starts hydrating it won't stop until it finishes with entire tree
+
+### How to overcome SSR?
+
+> Use the <Suspence> component to unlock two major SSR feature
+> Using <Lazy> we can split our code into chunks
+>
+> 1. HTML streaming on the server
+> 2. Selective hydration on client
